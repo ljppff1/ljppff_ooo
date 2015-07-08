@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon_frame_address"
+        android:padding="10dp"
+         >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageButton1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收  貨 人：" />
+
+                <TextView
+                    android:id="@+id/tv_lv_add_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/TextView02"
+                    android:layout_alignBottom="@+id/TextView02"
+                    android:layout_toRightOf="@+id/TextView02"
+                    android:text="張三" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                  android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="聯繫電話：" />
+
+                <TextView
+                    android:id="@+id/tv_lv_add_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/TextView01"
+                    android:text="333333333333" />
+
+            </RelativeLayout>
+
+<RelativeLayout   android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_lv_add_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="香港觀塘開源道49號創貿廣場" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="收貨地址：" />
+
+</RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_lv_add_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_gou" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

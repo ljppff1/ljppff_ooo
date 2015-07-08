@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopCarActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rela_shopcar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:padding="5dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_settle_maxfra" >
+                <ProgressBar
+        android:id="@+id/mPBShopCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+                
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="金額總計："
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/textView2"
+                            android:layout_toRightOf="@id/textView2" >
+
+                            <TextView
+                                android:id="@+id/tv_shop_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:text="HK$ 700"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_shop_pro_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/textView3"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="5dp"
+                            android:text="2件"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="商品數量："
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_shopcar_jiesuan"
+                            style="@style/Widget.TestView"
+                            android:layout_height="35dp"
+                            android:text="立即結算"
+                            android:background="@drawable/icon_logobackground"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout2"
+            android:layout_below="@+id/relativeLayout2"
+            android:padding="10dp" >
+
+            <ListView
+                android:id="@+id/listView_settlement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true" >
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_shopcar_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:visibility="gone"
+         >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_shopcar_nothing"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_logobackground"
+                android:gravity="center"
+                android:text="去購物"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_shopcar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:text="您的購物袋沒有商品"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WecomeActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rela_bottom"
+        android:orientation="vertical" >
+
+                    <RelativeLayout
+                android:id="@+id/mRltitle"
+                android:layout_width="fill_parent"
+                android:layout_height="140dip"
+                >
+                                           <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  
+           />
+                
+            </RelativeLayout>
+           <FrameLayout
+                android:id="@+id/mFLtitle"
+                android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="140dip" >
+
+        <com.james.mshop.widgets.MyGallery
+            android:id="@+id/banner_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="140dip"
+            android:soundEffectsEnabled="false"
+            android:keepScreenOn="true"
+            android:background="#000"
+            android:fadingEdgeLength="0.0dp"
+             />
+                <LinearLayout
+            android:id="@+id/ll_bottomNavPoint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_focus_indicator_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/welcome_rela_padding" >
+
+            <GridView
+                android:id="@+id/gridView_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:numColumns="2" >
+            </GridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/welcome_rela_padding" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:padding="@dimen/welcome_rela_padding"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/imageButton1"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="#d0d0d0"
+                            android:onClick="btn_latest"
+                            android:text="最新NEW" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/imageButton2"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="#d0d0d0"
+                            android:onClick="btn_sales"
+                            android:text="特惠SALES" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/icon_welcome_sales" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

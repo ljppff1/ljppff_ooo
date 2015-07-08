@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Case2Activity" >
+
+<RelativeLayout
+        android:id="@+id/rela_nocse2"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="暫無訂單"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+      <ListView
+        android:visibility="gone"
+        android:id="@+id/listView_case2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+                   <ProgressBar
+        android:id="@+id/mPbcaseframe2"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+      
+</RelativeLayout>

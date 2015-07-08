@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon_frame_address"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageButton1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_myadress_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="james：" />
+
+                <TextView
+                    android:id="@+id/tv_myadress_tele"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_myadress_name"
+                    android:layout_alignBottom="@+id/tv_myadress_name"
+                    android:layout_toRightOf="@+id/tv_myadress_name"
+                    android:text="13365047950" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_myadress_cityname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="香港：" />
+
+                <TextView
+                    android:id="@+id/tv_myadress_areaname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tv_myadress_cityname"
+                    android:text="香港島" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_myadress_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="香港觀塘開源道49號創貿廣場" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:focusable="false"
+            android:id="@+id/bt_lv_myadress_modify"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:background="@drawable/ic_pen" />
+
+        <Button
+               android:focusable="false"
+            android:id="@+id/bt_lv_myadress_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/linearLayout1"
+            android:layout_alignLeft="@+id/bt_lv_myadress_modify"
+            android:background="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

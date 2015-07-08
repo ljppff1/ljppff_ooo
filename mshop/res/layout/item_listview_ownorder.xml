@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent" >
+   <RelativeLayout
+       android:padding="5dp"
+         android:background="@drawable/icon_settle_smallfr" 
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_listview_ownorder_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/icon_settlement_boy" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_listview_ownorder_image" >
+
+            <TextView
+                android:id="@+id/tv_listview_ownorder_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                 android:textColor="@color/red"
+                android:layout_below="@+id/tv_listview_ownorder_hk"
+                android:layout_marginLeft="5dp"
+                android:text="33333" />
+
+            <TextView
+                android:id="@+id/tv_listview_ownorder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_listview_ownorder_hk"
+                android:layout_alignParentTop="true"
+                android:text="雙色純棉襯衫" />
+
+            <TextView
+                android:id="@+id/tv_listview_ownorder_hk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_listview_ownorder_rmb"
+                android:layout_below="@+id/tv_listview_ownorder_name"
+                android:textColor="@color/red"
+                android:text="HK$100" />
+
+            <TextView
+                android:id="@+id/tv_listview_ownorder_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_listview_ownorder_rmb"
+                android:layout_below="@+id/tv_listview_ownorder_rmb"
+                android:text="黑色" />
+
+            <TextView
+                android:id="@+id/tv_listview_ownorder_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_listview_ownorder_rmb"
+                android:layout_toRightOf="@+id/tv_listview_ownorder_rmb"
+                android:text="L33333333" />
+
+        </RelativeLayout>
+    </RelativeLayout> 
+
+</RelativeLayout>

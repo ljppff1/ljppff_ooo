@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/index_background"
+    tools:context=".OwnerActivity" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+            android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_own_smallframe"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/ImageButton01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="btn_loginout"
+                android:background="@drawable/icon_loginout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_own_bigframe"
+            android:padding="5dp" >
+
+            <ListView
+                android:id="@+id/listView_owner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+            </ListView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>

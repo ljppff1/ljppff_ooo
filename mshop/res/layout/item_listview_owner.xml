@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+                        android:id="@+id/rela_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_owner_listview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="訂單管理"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageView
+                        android:id="@+id/image_casemanage"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:background="@drawable/icon_own_arrow" />
+
+                </RelativeLayout>
+
+</RelativeLayout>

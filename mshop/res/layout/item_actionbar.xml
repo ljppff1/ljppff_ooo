@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/index_background" >
+
+   <RelativeLayout
+       android:id="@+id/relativeLayout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:padding="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/rela_actionbar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/rela_actionbarbtn"
+            android:background="@drawable/icon_rectect_top" >
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:onClick="btn_search"
+                android:background="@drawable/icon_search" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_action_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageButton3" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_actionbarbtn"
+            android:layout_width="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_alignBottom="@+id/rela_actionbar_search" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton_actionbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/icon_shopcar" />
+
+            <TextView
+                android:id="@+id/tv_actionbar_carnum"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_shopcar_num"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </FrameLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

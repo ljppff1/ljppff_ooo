@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/index_background"
+    tools:context=".ChoicePayActivity" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="請選擇付款方式"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical" 
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_paypal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_latest_sort"
+                android:text="信用卡及Paypal付款"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_zhifubao"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_latest_sort"
+                android:text="支付寶"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_zhuanzhang"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_latest_sort"
+                android:text="財付通"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="5dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    
+
+    <ImageView
+        android:id="@+id/imageView_latest"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/tv_latest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_latest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="低調奢華吊炸天襯衣" />
+
+    <TextView
+        android:id="@+id/tv_latest_price_hk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_latest_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/red"
+        android:text="HK$100000" />
+
+    <TextView
+        android:id="@+id/tv_latest_price_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_latest_price_hk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+          android:textColor="@color/red"
+        android:text="TextView" />
+</RelativeLayout>
+</RelativeLayout>

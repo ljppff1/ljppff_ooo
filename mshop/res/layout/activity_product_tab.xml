@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProductActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp" >
+       <RelativeLayout
+                android:id="@+id/mRltitle1"
+                android:layout_width="fill_parent"
+                android:layout_height="140dip"
+                >
+                                           <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  
+           />
+                
+            </RelativeLayout>
+           <FrameLayout
+                android:id="@+id/mFLtitle1"
+                android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="140dip" >
+
+        <com.james.mshop.widgets.MyGallery1
+            android:id="@+id/banner_gallery1"
+            android:layout_width="fill_parent"
+            android:layout_height="140dip"
+            android:soundEffectsEnabled="false"
+            android:keepScreenOn="true"
+            android:background="#000"
+            android:fadingEdgeLength="0.0dp"
+             />
+                <LinearLayout
+            android:id="@+id/ll_bottomNavPoint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_focus_indicator_container1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_pro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="TV5短袖"
+                />
+            
+            
+
+            <TextView
+                android:id="@+id/tv_pro_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_pro_name"
+                android:layout_alignBottom="@+id/tv_pro_name"
+                android:layout_alignParentRight="true"
+                 android:textColor="@color/red"
+                android:text="HK$100"
+                />
+
+            <TextView
+                android:id="@+id/tv_pro_hk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_pro_rmb"
+                android:layout_marginRight="18dp"
+                android:layout_toLeftOf="@+id/tv_pro_rmb"
+                android:textColor="@color/red"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_product_color"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/icon_detailframe"
+                android:gravity="center"
+                android:text="顏色" />
+
+            <TextView
+                android:id="@+id/tv_product_size"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/tv_product_color"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_product_color"
+                android:background="@drawable/icon_detailframe"
+                android:gravity="center"
+                android:text="尺碼" />
+
+            <TextView
+                android:id="@+id/imageButton_addcar"
+                style="@style/Widget.TestView"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_product_size"
+                android:layout_marginRight="5dp"
+                android:text="加入購物車"
+                android:textSize="16sp"
+                android:paddingLeft="3dp"
+                android:drawableLeft="@drawable/icon_car"
+                android:background="@drawable/icon_logobackground" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_product_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        >
+
+        <GridView
+            android:id="@+id/gridView_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:numColumns="6" >
+
+        </GridView>
+
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rela_product_color" >
+
+        <TextView
+            android:id="@+id/imageButton_addstore"
+            style="@style/Widget.TestView"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_logobackground"
+            android:drawableLeft="@drawable/icon_heart"
+            android:paddingLeft="3dp"
+            android:text="加入收藏"
+            android:textSize="16sp"
+/>
+
+        <TextView
+            android:id="@+id/tv_product_share"
+            style="@style/Widget.TestView"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageButton_addstore"
+            android:background="@drawable/icon_logobackground"
+            android:drawableLeft="@drawable/icon_share2"
+            android:padding="3dp"
+            android:text="分享"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

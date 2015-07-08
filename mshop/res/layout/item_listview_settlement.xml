@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_settle_smallfr" 
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iv_listview_shopcar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/icon_settlement_boy" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_listview_shopcar" >
+
+                <TextView
+                    android:id="@+id/tv_listview_car_hk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="HK$100" />
+
+                <TextView
+                    android:id="@+id/tv_listview_car_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_listview_car_hk1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="雙色純棉襯衫"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/tv_listview_car_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_listview_car_hk1"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/red" />
+
+                <Button
+                    android:id="@+id/btn_shopcar_del"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_rubbish"
+                    android:focusable="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_shopcar_plus"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:focusable="false" 
+                android:background="@drawable/icon_greybackground"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/tv_listview_car_pty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_shopcar_plus"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_shopcar_plus"
+                android:textSize="20sp"
+                android:text="10" />
+
+            <Button
+                android:id="@+id/btn_shopcar_sub"
+                  android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_greybackground"
+                android:layout_toRightOf="@+id/tv_listview_car_pty"
+                android:focusable="false" 
+                android:text="-"
+                 />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webdesign688.mshop"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+    <!-- for card.io card scanning -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!-- for most things, including card.io & paypal -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.james.mshop.util.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.james.mshop.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.IndexActivity"
+            >
+           
+        </activity>
+        <activity
+            android:name="com.james.mshop.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.NewAdressActivity"
+            android:label="@string/title_activity_new_adress" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.NewAdressActivity"
+            android:label="@string/title_activity_new_address" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.ChooseAdrActivity"
+            android:label="@string/title_activity_choose_adr" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.OwnerActivity"
+            android:label="@string/title_activity_owner" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.StoreActivity"
+            android:label="@string/title_activity_store" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.ShopCarActivity"
+            android:label="@string/title_activity_shop_car" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.product.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.product.ProductActivity"
+            android:label="@string/title_activity_product" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.product.LatestActivity"
+            android:label="@string/title_activity_latest" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.CategoryTwoActivity"
+            android:label="@string/title_activity_man" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.CategoryThreeActivity"
+            android:label="@string/title_activity_clothes" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.CaseManagerActivity"
+            android:label="@string/title_activity_case_manager"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.MyadressActivity"
+            android:label="@string/title_activity_myadress" >
+        </activity>
+        <activity android:name="com.james.mshop.women.BeautyActivity" >
+        </activity>
+        <activity android:name="com.james.mshop.women.WoMenActivity" >
+        </activity>
+        <activity android:name="com.james.mshop.DisplayActivity" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.NothingIncarActivity"
+            android:label="@string/title_activity_nothing_incar" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.product.Pro_DetailActivity"
+            android:label="@string/title_activity_pro__detail" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.product.Pro_SizeActivity"
+            android:label="@string/title_activity_pro__detail" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.cases.Case1Activity"
+            android:label="@string/title_activity_case1" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.cases.Case2Activity"
+            android:label="@string/title_activity_case1" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.cases.Case3Activity"
+            android:label="@string/title_activity_case1" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.cases.Case4Activity"
+            android:label="@string/title_activity_case1" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.ModifyAdressActivity"
+            android:label="@string/title_activity_modify" >
+        </activity>
+        <activity android:name="com.james.mshop.owner.ChoiceadressActivity" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.pay.ChoicePayActivity"
+            android:label="@string/title_activity_choice_pay" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.pay.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail" >
+        </activity>
+        <activity android:name="com.james.mshop.pay.PayPalActivity" >
+        </activity>
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <activity
+            android:name="com.james.mshop.DiaLogActivity"
+            android:label="@string/title_activity_dia_log"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.pay.OrderConfirmActivity"
+            android:label="@string/title_activity_order_confirm" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.OwnerOrderActivity"
+            android:label="@string/title_activity_owner_order" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.OwnerOrderActivity1"
+            android:label="@string/title_activity_owner_order" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.BrushActivity"
+            android:label="@string/title_activity_brush" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.BrushResultActivity"
+            android:label="@string/title_activity_brush_result" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.Tab1Activity"
+            android:label="@string/title_activity_tab" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.owner.Tab2Activity"
+            android:label="@string/title_activity_tab" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.Main3333Activity"
+            android:label="@string/title_activity_main3333" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.CaseDetailActivity"
+            android:label="@string/title_activity_case_detail" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.SearchResultActivity"
+            android:label="@string/title_activity_search_result" >
+        </activity>
+        <activity 
+            android:name="com.james.mshop.Gallery_Pic_Activity"
+            ></activity>
+        <activity 
+            android:name="com.james.mshop.IndexNewActivity"
+            ></activity>
+        <activity 
+            android:name="com.james.mshop.IndexNew1Activity"
+            ></activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.james.mshop.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信分享回调 -->
+        <activity
+            android:name="com.james.mshop.yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.james.mshop.ForgetPasswordAcitivity"
+            android:label="@string/title_activity_forget_password"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.SecuCodeActivity"
+            android:label="@string/title_activity_secu_code"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.james.mshop.MainActivity"
+            android:label="@string/title_activity_wecome" >
+      </activity>
+            <activity
+            android:name="com.james.mshop.WecomeActivity"
+            android:label="@string/title_activity_wecome" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

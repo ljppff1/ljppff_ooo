@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    
+
+    <LinearLayout
+        android:background="@drawable/icon_settle_smallfr" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交时间："
+                />
+
+            <TextView
+                android:id="@+id/tv_listview_case1_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textView1"
+                android:layout_toRightOf="@id/textView1"
+                android:text="2014.4.22 " />
+
+        </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_listview_case1_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/icon_settlement_boy" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_listview_case1_image" >
+
+            <TextView
+                android:id="@+id/tv_listview_case1_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_listview_case1_hk"
+                android:layout_marginLeft="5dp"
+                 android:textColor="@color/red"
+                android:text="33333" />
+
+            <TextView
+                android:id="@+id/tv_listview_case1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_listview_case1_hk"
+                android:layout_alignParentTop="true"
+                android:text="雙色純棉襯衫" />
+
+            <TextView
+                android:id="@+id/tv_listview_case1_hk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_listview_case1_rmb"
+                android:layout_below="@+id/tv_listview_case1_name"
+                 android:textColor="@color/red"
+                android:text="HK$100" />
+
+            <TextView
+                android:id="@+id/tv_listview_case1_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_listview_case1_rmb"
+                android:layout_below="@+id/tv_listview_case1_rmb"
+                android:text="黑色" />
+
+            <TextView
+                android:id="@+id/tv_listview_case1_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_listview_case1_rmb"
+                android:layout_toRightOf="@+id/tv_listview_case1_rmb"
+                android:text="L33333333" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+     <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_man_blackline" />
+        </RelativeLayout>
+    <RelativeLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计："
+                />
+
+            <TextView
+                android:id="@+id/tv_listview_case1_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textView2"
+                android:layout_toRightOf="@id/textView2"
+                android:text="HK$333 " />
+
+        </RelativeLayout>
+       
+  
+        <RelativeLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_listview_case3_makesure_address"
+                android:layout_width="wrap_content"
+                android:focusable="false"
+                android:layout_height="35dp"
+                android:background="@drawable/icon_logobackground"
+                android:text="確認收貨"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>
